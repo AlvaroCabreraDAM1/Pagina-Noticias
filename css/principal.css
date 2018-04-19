@@ -1,0 +1,65 @@
+html, body {
+    
+    height: 100%;
+    width: 100%;
+    
+    background: url(../img/background.jpg);
+    background-size: cover;
+    
+}
+
+#navbar {
+    
+    height: 175px;
+    width: 98%;
+    
+    margin-top: 1%;
+    margin-left: 1%;
+    
+    border-radius: 15px;
+    border-bottom-width: 5px;
+    border-color: rgba(0,0,0,0.5);
+    
+    background: url(../img/navbar_background.png);
+    background-position-x: 35%;
+    background-position-y: 70%;
+    
+}
+
+#titulo{
+    
+    margin-top: 120px;
+    
+    color: rgba(175, 229, 89, 1);
+    
+    font-size:250%;
+    font-family: Indie Flower;
+    font-style: oblique;
+    
+}
+
+#opciones {
+    
+    float: right;
+    
+    margin-top: 115px;
+    
+    font-size:200%;
+    
+}
+
+#contenedor {
+    
+    width: 78%;
+
+    margin-top: 200px;
+    margin-left: 1%;
+
+}
+
+.noticia, .fecha {
+    
+    margin-bottom: 15px;
+    margin-left: 0;
+    
+}
