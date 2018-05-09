@@ -5,7 +5,7 @@ var cargado = 1;
 $(window).scroll(function () {
     if ($(window).scrollTop() + $(window).height() + 10 >= $(document).height()) {
         if (cargado < 6) {
-            $.getJSON("https://rawgit.com/arsg93/Noticias/master/data/" + cargado + ".json", function (jsonObject) {
+            $.getJSON("https://rawgit.com/AlvaroCabreraDAM1/Pagina-Noticias/master/data/" + cargado + ".json", function (jsonObject) {
                 addrow(jsonObject);
             }); cargado++;
         } else {
@@ -17,7 +17,7 @@ $(window).scroll(function () {
 
 function cargar() {
     if (cargado < 6) {
-        $.getJSON("https://rawgit.com/arsg93/Noticias/master/data/" + cargado + ".json", function (jsonObject) {
+        $.getJSON("https://rawgit.com/AlvaroCabreraDAM1/Pagina-Noticias/master/data/" + cargado + ".json", function (jsonObject) {
             addrow(jsonObject);
         }); cargado++;
     } else {
@@ -35,7 +35,7 @@ function addrow(json) {
 				'<div class="well well-sm">' + 
 					item.fecha +
 				"</div>" +
-				'<img src="' + item.img + '" class="img-rounded" alt="..." />' +
+				'<img src="' + item.imgmid + '" class="img-rounded" alt="..." />' +
 			"</div>" +	
             '<div class="col-sm-9 text">' + 
 				'<p class="titulo" align="justify"><b>' + 
