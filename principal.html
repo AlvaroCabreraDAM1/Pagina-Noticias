@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
         <link rel="stylesheet" href="css/principal.css"/>
         <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
+        <script src="js/principal.js"></script>
     </head>
 
     <body>
@@ -29,19 +30,22 @@
                 </ul>
             </div>
         </nav>
-        
+
         <!-- Contenido de la pagina -->
         <div class="container-fluid" id="contenedor">
-            
-            <div class="well well-sm">
-                Fecha: 19/04/2018
-            </div>
-            
+
+            <!-- Noticia -->
             <div class="row noticia">
-                <div class="col-sm-3" style="background-color:red; left: 0;">
-                    <img src="../XY7_EN_75-250x120-1524086016.png.pagespeed.ce.p60ctm4UtO.png" class="img-rounded" alt=""/> 
+                <div class="col-sm-3 img">
+                    <div class="well well-sm">
+                        19/04/2018
+                    </div>
+                    <img src="img/noticias/bruja.png" class="img-rounded" alt=""/>
                 </div>
-                <div class="col-sm-9" style="background-color:lavender;">
+                <div class="col-sm-9 text">
+                    <p class="titulo" align="justify"><b>
+                            Lorem ipsum!
+                        </b><p>
                     <p align="justify">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                         Duis venenatis velit et metus. Duis lacinia leo in velit. 
@@ -54,15 +58,75 @@
                         Duis a arcu et diam suscipit facilisis. Pellentesque 
                         lobortis libero et metus.
                     </p>
+                    <p align="justify">
+                        Read more
+                    <p>
+                </div>
+            </div>
+
+            <!-- Noticia -->
+            <div class="row noticia">
+                <div class="col-sm-3 img">
+                    <div class="well well-sm">
+                        17/04/2018
+                    </div>
+                    <img src="img/noticias/articuno.png" class="img-rounded" alt=""/>
+                </div>
+                <div class="col-sm-9 text">
+                    <p class="titulo" align="justify"><b>
+                            Articuno-GX And Salamence-GX From ‘Champion Road’ Revealed!
+                        </b><p>
+                    <p align="justify">
+                        Articuno-GX and Salamence-GX from SM6b Champion Road 
+                        have been fully revealed after small images were seen 
+                        earlier this month! As expected, they take inspiration 
+                        from their Pokemon ex counterparts from the EX Ruby & 
+                        Sapphire era. <br><br>
+                        
+                        The set will release in Japan on May 3rd. Thanks goes to
+                        Bangiras for the translations!
+                    </p>
+                    <p align="justify">
+                        Read more
+                    <p>
+                </div>
+            </div>
+
+            <!-- Noticia -->
+            <div class="row noticia">
+                <div class="col-sm-3 img">
+                    <div class="well well-sm">
+                        17/04/2018
+                    </div>
+                    <img src="img/noticias/blaine.png" class="img-rounded" alt=""/>
+                </div>
+                <div class="col-sm-9 text">
+                    <p class="titulo" align="justify"><b>
+                            Blaine’s Explosive Battle From ‘Dragon Storm!’ Revealed
+                        </b><p>
+                    <p align="justify">
+                            Blaine’s Explosive Battle has been revealed from 
+                            SM6a Dragon Storm. The set releases in Japan on 
+                            April 6th. Thanks to Bangiras for the translation!
+                    </p>
+                    <p align="justify">
+                        Read more
+                    <p>
                 </div>
             </div>
             
-            <div class="well well-sm">
-                Fecha: 17/04/2018
+            <!-- Noticias cargadas desde .json -->
+            <div class="noticias">
+                
             </div>
             
         </div>
-        
+
+        <!-- Publicidad -->
+        <div class="container-fluid" id="publicidad">
+            <img src="img/publicidad.png" alt=""/>
+        </div>
+
     </body>
-    
+
 </html>
