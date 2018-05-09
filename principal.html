@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <title>Bootstrap Example</title>
+        <title>Pokemon Tera: News</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,6 +12,28 @@
         <link rel="stylesheet" href="css/principal.css"/>
         <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
         <script src="js/principal.js"></script>
+        
+        <!-- Rotar publicidad -->
+        <script>
+            
+            var contador = 0;
+            var max = 2;
+            var timer = setInterval(cambiarImagenes,10000);
+            
+            a[0] = "img/publicidad.png";
+            a[1] = "img/publicidad2.png";
+            a[2] = "img/publicidad3.png";
+            
+            function cambiarImagenes() {
+                if (contador == max) {
+                    contador = 0;
+                } else {
+                    contador ++;
+                }
+                $("#imgPublicidad").attr("src", a[contador]);
+            }
+            
+        </script>
     </head>
 
     <body>
@@ -23,7 +45,6 @@
                     <a class="navbar-brand" href="#" id="titulo">Pokemon Tera</a>
                 </div>
                 <ul class="nav navbar-nav" id="opciones">
-                    <li><a href="#" style="color: rgba(175, 229, 89, 1);"><i class="fas fa-newspaper"></i></a></li>
                     <li><a href="#" style="color: rgba(175, 229, 89, 1);"> <!-- Color Twitter: (45, 170, 228, 1) --> <i class="fab fa-twitter"></i></a></li>
                     <li><a href="#" style="color: rgba(175, 229, 89, 1);"> <!-- Color Discord: (114, 137, 217, 1) --> <i class="fab fa-discord"></i></a></li>
                     <li><a href=https://github.com/AlvaroCabreraDAM1/Pagina-Noticias style="color: rgba(175, 229, 89, 1);"> <!-- Color Discord: (0, 0, 0, 1) --> <i class="fab fa-github"></i></a></li>
@@ -124,7 +145,7 @@
 
         <!-- Publicidad -->
         <div class="container-fluid" id="publicidad">
-            <img src="img/publicidad.png" alt=""/>
+            <img src="img/publicidad.png" id="imgPublicidad" alt=""/>
         </div>
 
     </body>
