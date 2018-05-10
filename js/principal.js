@@ -31,23 +31,23 @@ function addrow(json) {
     $.each(json, function (i, item) {
         $(".noticias").append(
 		'<div class="row noticia">' +
-            '<div class="col-sm-3 img">' +
+            '<div class="img">' +
 				'<div class="well well-sm">' + 
 					item.fecha +
-				"</div>" +
+				'</div>' +
 				'<img src="' + item.imgmid + '" class="img-rounded" alt="..." />' +
-			"</div>" +	
-            '<div class="col-sm-9 text">' + 
-				'<p class="titulo" align="justify"><b>' + 
+			'</div>' +	
+            '<div class="text">' + 
+				'<p class="titulo"><b>' + 
 					item.titulo + 
-				"</b></p>" +
+				'</b></p>' +
 				'<p align="justify">' + 
 					item.descripcion + 
-				"</p>" + 
+				'</p>' + 
 				'<p align="justify">' + 
-					"Read more" + 
-				"</p>" + 
-			"</div>" + 
-		"</div>");
+					'Read more' + 
+				'</p>' + 
+			'</div>' + 
+		'</div>');
     })
 };

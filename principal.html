@@ -12,27 +12,29 @@
         <link rel="stylesheet" href="css/principal.css"/>
         <link href='https://fonts.googleapis.com/css?family=Indie Flower' rel='stylesheet'>
         <script src="js/principal.js"></script>
-        
-        <!-- Rotar publicidad -->
-        <script>
-            
+        <!-- Rotar publicidad --> <script>
+
+            var a = [
+                "img/publicidad.jpg", 
+                "img/publicidad2.jpg", 
+                "img/publicidad3.jpg"
+            ];
             var contador = 0;
-            var max = 2;
-            var timer = setInterval(cambiarImagenes,10000);
-            
-            a[0] = "img/publicidad.png";
-            a[1] = "img/publicidad2.png";
-            a[2] = "img/publicidad3.png";
-            
-            function cambiarImagenes() {
-                if (contador == max) {
-                    contador = 0;
-                } else {
-                    contador ++;
-                }
-                $("#imgPublicidad").attr("src", a[contador]);
+            var intervalo;
+
+            $(document).ready(function(){
+            intervalo = setInterval(pasarPublicidad, 8500);    
+            });
+
+            function pasarPublicidad() {
+            if (contador == 2) {
+            contador = 0;
+            } else {
+            contador ++;
             }
-            
+            $("#imgPublicidad").attr("src", a[contador]);   
+            };
+
         </script>
     </head>
 
@@ -52,21 +54,76 @@
             </div>
         </nav>
 
+        <!-- Degradado -->
+        <div id="gradient"></div>
+        
         <!-- Contenido de la pagina -->
         <div class="container-fluid" id="contenedor">
 
+            <!-- id="Plantilla">
+            <div class="row noticia">
+                <div class="img">
+                    <div class="well well-sm">
+                        FECHA
+                    </div>
+                    <img src="IMAGEN" class="img-rounded" alt=""/>
+                </div>
+                <div class="text">
+                    <p class="titulo"><b>
+                        TITULO
+                    </b><p>
+                    <p align="justify">
+                        DESCRIPCION
+                    </p>
+                    <p>
+                        Read more
+                    <p>
+                </div>
+            </div> 
+            </!-->
+            
             <!-- Noticia -->
             <div class="row noticia">
-                <div class="col-sm-3 img">
+                <div class="img">
+                    <div class="well well-sm">
+                        25/04/2018
+                    </div>
+                    <img src="img/noticias/cacturneRevelado.png" class="img-rounded" alt=""/>
+                </div>
+                <div class="text">
+                    <p class="titulo"><b>
+                        Revelado Cacturne de "Champion Road"!
+                    </b><p>
+                    <p align="justify">
+                        La página oficial japonesa de Pokémon TCG ha revelado 
+                        hoy a Cacturne de la próxima expansión japonesa 
+                        “Champion Road”. Esta expansión se pondrá en venta al 
+                        público el 3 de mayo en Japón. Puesto que en Europa y 
+                        américa dicha expansión no será publicada, todas las 
+                        cartas que pertenezcan a ella serán incluidas en la 
+                        futura expansión “Tormenta Celestial” de la que aún no 
+                        se ha anunciado la fecha de salida. <br><br>
+                        
+                        A continuación os dejo la traducción de la carta.
+                    </p>
+                    <p>
+                       Leer mas... 
+                    <p>
+                </div>
+            </div>
+
+            <!-- Noticia -->
+            <div class="row noticia">
+                <div class="img">
                     <div class="well well-sm">
                         19/04/2018
                     </div>
                     <img src="img/noticias/bruja.png" class="img-rounded" alt=""/>
                 </div>
-                <div class="col-sm-9 text">
-                    <p class="titulo" align="justify"><b>
+                <div class="text">
+                    <p class="titulo"><b>
                             Lorem ipsum!
-                        </b><p>
+                    </b><p>
                     <p align="justify">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
                         Duis venenatis velit et metus. Duis lacinia leo in velit. 
@@ -79,58 +136,67 @@
                         Duis a arcu et diam suscipit facilisis. Pellentesque 
                         lobortis libero et metus.
                     </p>
-                    <p align="justify">
+                    <p>
                         Read more
                     <p>
                 </div>
             </div>
-
+            
             <!-- Noticia -->
             <div class="row noticia">
-                <div class="col-sm-3 img">
+                <div class="img">
                     <div class="well well-sm">
-                        17/04/2018
+                        19/04/2018
                     </div>
-                    <img src="img/noticias/articuno.png" class="img-rounded" alt=""/>
+                    <img src="img/noticias/bruja.png" class="img-rounded" alt=""/>
                 </div>
-                <div class="col-sm-9 text">
-                    <p class="titulo" align="justify"><b>
-                            Articuno-GX And Salamence-GX From ‘Champion Road’ Revealed!
-                        </b><p>
+                <div class="text">
+                    <p class="titulo"><b>
+                            Lorem ipsum!
+                    </b><p>
                     <p align="justify">
-                        Articuno-GX and Salamence-GX from SM6b Champion Road 
-                        have been fully revealed after small images were seen 
-                        earlier this month! As expected, they take inspiration 
-                        from their Pokemon ex counterparts from the EX Ruby & 
-                        Sapphire era. <br><br>
-                        
-                        The set will release in Japan on May 3rd. Thanks goes to
-                        Bangiras for the translations!
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Duis venenatis velit et metus. Duis lacinia leo in velit. 
+                        Sed tristique. Sed id turpis malesuada nulla bibendum 
+                        iaculis. In nec velit. Fusce augue diam, sollicitudin eu, 
+                        porttitor vel, euismod vel, nisl. Aenean venenatis quam eu 
+                        massa. Pellentesque non lorem non tortor placerat vulputate. 
+                        Maecenas eleifend nibh ut lectus. Morbi eget eros. Sed 
+                        luctus porta justo. Fusce eget est eu elit suscipit cursus. 
+                        Duis a arcu et diam suscipit facilisis. Pellentesque 
+                        lobortis libero et metus.
                     </p>
-                    <p align="justify">
+                    <p>
                         Read more
                     <p>
                 </div>
             </div>
-
+            
             <!-- Noticia -->
             <div class="row noticia">
-                <div class="col-sm-3 img">
+                <div class="img">
                     <div class="well well-sm">
-                        17/04/2018
+                        19/04/2018
                     </div>
-                    <img src="img/noticias/blaine.png" class="img-rounded" alt=""/>
+                    <img src="img/noticias/bruja.png" class="img-rounded" alt=""/>
                 </div>
-                <div class="col-sm-9 text">
-                    <p class="titulo" align="justify"><b>
-                            Blaine’s Explosive Battle From ‘Dragon Storm!’ Revealed
-                        </b><p>
+                <div class="text">
+                    <p class="titulo"><b>
+                            Lorem ipsum!
+                    </b><p>
                     <p align="justify">
-                            Blaine’s Explosive Battle has been revealed from 
-                            SM6a Dragon Storm. The set releases in Japan on 
-                            April 6th. Thanks to Bangiras for the translation!
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                        Duis venenatis velit et metus. Duis lacinia leo in velit. 
+                        Sed tristique. Sed id turpis malesuada nulla bibendum 
+                        iaculis. In nec velit. Fusce augue diam, sollicitudin eu, 
+                        porttitor vel, euismod vel, nisl. Aenean venenatis quam eu 
+                        massa. Pellentesque non lorem non tortor placerat vulputate. 
+                        Maecenas eleifend nibh ut lectus. Morbi eget eros. Sed 
+                        luctus porta justo. Fusce eget est eu elit suscipit cursus. 
+                        Duis a arcu et diam suscipit facilisis. Pellentesque 
+                        lobortis libero et metus.
                     </p>
-                    <p align="justify">
+                    <p>
                         Read more
                     <p>
                 </div>
@@ -138,14 +204,14 @@
             
             <!-- Noticias cargadas desde .json -->
             <div class="noticias">
-                
+
             </div>
-            
+
         </div>
 
         <!-- Publicidad -->
         <div class="container-fluid" id="publicidad">
-            <img src="img/publicidad.png" id="imgPublicidad" alt=""/>
+            <img src="img/publicidad.jpg" id="imgPublicidad" alt=""/>
         </div>
 
     </body>
