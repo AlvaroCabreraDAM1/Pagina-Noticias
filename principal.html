@@ -4,6 +4,7 @@
     <head>
         <title>Pokemon Tera: News</title>
         <meta charset="utf-8">
+		<link rel="icon" href="img/latios.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -48,7 +49,11 @@
                     <a class="navbar-brand" href="#" id="titulo">Pokemon Tera</a>
                 </div>
                 <ul class="nav navbar-nav" id="opciones">
-					<li><b style="color: rgba(175, 229, 89, 1); font-size: 90%; vertical-align: text-bottom;">Carga automatica:</b><i title="Desactivada" class="fas fa-toggle-off" id="toggle" style="color: rgba(175, 229, 89, 1);"></i></li>
+					<li>
+						<b style="color: rgba(175, 229, 89, 1); font-size: 90%; vertical-align: text-bottom;">Carga automatica:</b>
+						<i title="Desactivada" class="fas fa-toggle-off toggle" id="toggle-off" data-placement="bottom" style="color: rgba(175, 229, 89, 1);"></i>
+						<i title="Activada" class="fas fa-toggle-on toggle" id="toggle-on"  data-placement="bottom" style="color: rgba(175, 229, 89, 1);"></i>
+					</li>
                     <li><a href="#" style="color: rgba(175, 229, 89, 1);"> <!-- Color Twitter: (45, 170, 228, 1) --> <i class="fab fa-twitter"></i></a></li>
                     <li><a href=https://discord.gg/u85fXP style="color: rgba(175, 229, 89, 1);"> <!-- Color Discord: (114, 137, 217, 1) --> <i class="fab fa-discord"></i></a></li>
                     <li><a href=https://github.com/AlvaroCabreraDAM1/Pagina-Noticias style="color: rgba(175, 229, 89, 1);"> <!-- Color Discord: (0, 0, 0, 1) --> <i class="fab fa-github"></i></a></li>
@@ -83,36 +88,6 @@
                 </div>
             </div> 
             </!-->
-            
-            <!-- Noticia -->
-            <div class="row noticia">
-                <div class="img">
-                    <div class="well well-sm">
-                        25/04/2018
-                    </div>
-                    <img src="img/noticias/cacturneRevelado.png" class="img-rounded" alt=""/>
-                </div>
-                <div class="text">
-                    <p class="titulo"><b>
-                        Revelado Cacturne de "Champion Road"!
-                    </b></p>
-                    <p align="justify">
-                        La página oficial japonesa de Pokémon TCG ha revelado 
-                        hoy a Cacturne de la próxima expansión japonesa 
-                        “Champion Road”. Esta expansión se pondrá en venta al 
-                        público el 3 de mayo en Japón. Puesto que en Europa y 
-                        américa dicha expansión no será publicada, todas las 
-                        cartas que pertenezcan a ella serán incluidas en la 
-                        futura expansión “Tormenta Celestial” de la que aún no 
-                        se ha anunciado la fecha de salida. <br><br>
-                        
-                        A continuación os dejo la traducción de la carta.
-                    </p>
-                    <p>
-                       Leer mas... 
-                    </p>
-                </div>
-            </div>
 
             <!-- Noticia -->
             <div class="row noticia">
@@ -174,6 +149,36 @@
                 </div>
             </div>
             
+			<!-- Noticia -->
+            <div class="row noticia">
+                <div class="img">
+                    <div class="well well-sm">
+                        25/04/2018
+                    </div>
+                    <img src="img/noticias/cacturneRevelado.png" class="img-rounded" alt=""/>
+                </div>
+                <div class="text">
+                    <p class="titulo"><b>
+                        Revelado Cacturne de "Champion Road"!
+                    </b></p>
+                    <p align="justify">
+                        La página oficial japonesa de Pokémon TCG ha revelado 
+                        hoy a Cacturne de la próxima expansión japonesa 
+                        “Champion Road”. Esta expansión se pondrá en venta al 
+                        público el 3 de mayo en Japón. Puesto que en Europa y 
+                        américa dicha expansión no será publicada, todas las 
+                        cartas que pertenezcan a ella serán incluidas en la 
+                        futura expansión “Tormenta Celestial” de la que aún no 
+                        se ha anunciado la fecha de salida. <br><br>
+                        
+                        A continuación os dejo la traducción de la carta.
+                    </p>
+                    <p>
+                       Leer mas... 
+                    </p>
+                </div>
+            </div>
+			
             <!-- Noticia -->
             <div class="row noticia">
                 <div class="img">
@@ -210,7 +215,11 @@
             </div>
 			
 			<!-- Boton de carga -->
-			<button id="chargeButton">Hola</button>
+			<div align="center"> 
+				<button type="button" id="chargeButton" class="btn btn-success" style="background-color: rgba(175, 229, 89, 1); border-color: rgba(175, 229, 89, 1); color: black;">Cargar mas...</button>
+			</div>
+			
+			<br>
 			
         </div>
 

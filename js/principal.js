@@ -1,6 +1,5 @@
 var cargado = 1;
-var toggleOn = 0;
-var toggleMisage = ["Desactivada", "Activada"];
+var toggleOn = false;
 
 $(window).scroll(function () {
     if ($(window).scrollTop() + $(window).height() + 10 >= $(document).height() && toggleOn == 1) {
@@ -44,19 +43,21 @@ function addrow(json) {
 };
 
 $(document).ready(function(){
-    $("#toggle").click(function(){
-		if (toggleOn == 0) {
-			$("#toggle").removeClass("fa-toggle-off");
-			$("#toggle").addClass("fa-toggle-on");
-			toggleOn = 1;
-			$("#toggle").attr("title", toggleMisage[toggleOn]);
-			$("#chargeButton").show();
-		} else {
-			$("#toggle").removeClass("fa-toggle-on");
-			$("#toggle").addClass("fa-toggle-off");
-			toggleOn = 0;
-			$("#toggle").attr("title", toggleMisage[toggleOn]);
+	$("#toggle-on").tooltip();
+    $("#toggle-off").tooltip();
+	$("#toggle-on").hide();
+	
+    $(".toggle").click(function(){
+		if (toggleOn == false) {
+			$("#toggle-off").hide();
+			$("#toggle-on").show();
+			toggleOn = true;
 			$("#chargeButton").hide();
+		} else {
+			$("#toggle-on").hide();
+			$("#toggle-off").show();
+			toggleOn = false;
+			$("#chargeButton").show();
 		}
     });
 	

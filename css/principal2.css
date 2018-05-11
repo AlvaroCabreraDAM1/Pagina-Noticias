@@ -4,7 +4,6 @@ html, body {
     padding: 0;
     margin: 0;
     background: rgba(128, 181, 113, 255);
-
 }
 
 #navbar {
@@ -12,7 +11,7 @@ html, body {
     width: 100%;
     border-bottom-width: 0px;
     background: url(../img/navbar_background4.jpg);
-    background-position-x: 35%;
+    background-position-x: 20%;
     background-position-y: 82%;
     background-size: 70%;
 }
@@ -27,22 +26,36 @@ html, body {
 
 #opciones {
     float: right;
-    margin-top: 210px;
+    margin-top: 200px;
     font-size:200%;
+}
+
+.toggle {
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-left: 5px;	
+}
+
+.tooltip > .tooltip-inner {
+    background-color: rgba(175, 229, 89, 1);
+    color: black; 
+}
+
+.tooltip.bottom > .tooltip-arrow {
+    border-bottom: 5px solid rgba(175, 229, 89, 1);
 }
 
 #gradient {
     margin-top: 250px;
     height: 70px;
     width: 100%;
-    background: linear-gradient(rgba(128, 181, 113, 255), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(128, 181, 113, 255) 10%, rgba(0, 0, 0, 0));
     position:fixed;
 }
 
 #contenedor, #publicidad {
     margin-top: 300px;
     float: left;
-
 }
 
 #contenedor {
@@ -77,10 +90,8 @@ html, body {
     margin-right: 20px;
 }
 
-.text {
-    
-    width: calc(100% - 290px);
-    
+.text {   
+    width: calc(100% - 290px);   
 }
 
 .titulo {
