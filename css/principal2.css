@@ -10,7 +10,7 @@ html, body {
     height: 250px;
     width: 100%;
     border-bottom-width: 0px;
-    background: url(../img/navbar_background4.jpg);
+	background-image: url(../img/navbar_background4.jpg);
     background-position-x: 20%;
     background-position-y: 82%;
     background-size: 70%;

@@ -10,8 +10,18 @@ html, body {
     height: 250px;
     width: 100%;
     border-bottom-width: 0px;
-    background: url(../img/navbar_background3.jpg);
+}
+
+.navbarTheme1 {
+	background-image: url(../img/navbar_background3.jpg);
     background-position-x: 35%;
+    background-position-y: 82%;
+    background-size: 70%;
+}
+
+.navbarTheme2 {
+	background-image: url(../img/navbar_background4.jpg);
+    background-position-x: 10%;
     background-position-y: 82%;
     background-size: 70%;
 }
@@ -34,6 +44,12 @@ html, body {
 	margin-top: 15px;
 	margin-right: 10px;
 	margin-left: 5px;
+}
+
+#theme {	
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-left: 5px;	
 }
 
 .tooltip > .tooltip-inner {
