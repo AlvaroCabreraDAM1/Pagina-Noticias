@@ -31,6 +31,14 @@ html, body {
     font-size:200%;
 }
 
+#toggle {
+	
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-left: 5px;
+	
+}
+
 #gradient {
     margin-top: 250px;
     height: 70px;
@@ -77,12 +85,12 @@ html, body {
     margin-right: 20px;
 }
 
+.titulo {
+    font-size: 150%; 
+}
+
 .text {
     
     width: calc(100% - 290px);
     
-}
-
-.titulo {
-    font-size: 150%; 
 }

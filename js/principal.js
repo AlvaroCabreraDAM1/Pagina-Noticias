@@ -1,19 +1,12 @@
-
-
 var cargado = 1;
+var toggleOn = 0;
+var toggleMisage = ["Desactivada", "Activada"];
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() + $(window).height() + 10 >= $(document).height()) {
-        if (cargado < 6) {
-            $.getJSON("https://rawgit.com/AlvaroCabreraDAM1/Pagina-Noticias/master/data/" + cargado + ".json", function (jsonObject) {
-                addrow(jsonObject);
-            }); cargado++;
-        } else {
-            $('#mas').text('No hay más noticias');
-        }
+    if ($(window).scrollTop() + $(window).height() + 10 >= $(document).height() && toggleOn == 1) {
+        cargar();
     }
 });
-
 
 function cargar() {
     if (cargado < 6) {
@@ -24,8 +17,6 @@ function cargar() {
         $('#mas').text('No hay más noticias');
     }
 };
-
-
 
 function addrow(json) {
     $.each(json, function (i, item) {
@@ -51,3 +42,24 @@ function addrow(json) {
 		'</div>');
     })
 };
+
+$(document).ready(function(){
+    $("#toggle").click(function(){
+		if (toggleOn == 0) {
+			$("#toggle").removeClass("fa-toggle-off");
+			$("#toggle").addClass("fa-toggle-on");
+			toggleOn = 1;
+			$("#toggle").attr("title", toggleMisage[toggleOn]);
+			$("#chargeButton").show();
+		} else {
+			$("#toggle").removeClass("fa-toggle-on");
+			$("#toggle").addClass("fa-toggle-off");
+			toggleOn = 0;
+			$("#toggle").attr("title", toggleMisage[toggleOn]);
+			$("#chargeButton").hide();
+		}
+    });
+	
+	$("#chargeButton").click(function() {cargar();});
+	
+});		
