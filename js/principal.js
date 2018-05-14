@@ -71,6 +71,7 @@ $(document).ready(function(){
 			$("#navbar").addClass("navbarTheme2");
 			$("#gradient").css("background", "linear-gradient(rgba(128, 181, 113, 255) 10%, rgba(0, 0, 0, 0))");
 			theme = 1;
+			break;
 			
 			case 1:
 			$("html, body").css("background", "rgba(127, 173, 111, 255)");
@@ -78,6 +79,7 @@ $(document).ready(function(){
 			$("#navbar").addClass("navbarTheme1");
 			$("#gradient").css("background", "linear-gradient(rgba(127, 173, 111, 255) 10%, rgba(0, 0, 0, 0))");
 			theme = 0;
+			break;
 			
 		}
 		

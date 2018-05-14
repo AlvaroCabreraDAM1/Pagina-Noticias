@@ -3,7 +3,7 @@ html, body {
     width: 100%;
     padding: 0;
     margin: 0;
-    background: rgba(127, 173, 111, 255);
+    background: rgba(104, 160, 96, 255);
 }
 
 #navbar {
@@ -13,10 +13,7 @@ html, body {
 }
 
 .navbarTheme1 {
-	background-image: url(../img/navbar_background3.jpg);
-    background-position-x: 35%;
-    background-position-y: 82%;
-    background-size: 70%;
+	background-image: url(../img/navbar_background5.png);
 }
 
 .navbarTheme2 {
@@ -28,7 +25,7 @@ html, body {
 
 #titulo{
     margin-top: 210px;
-    color: rgba(175, 229, 89, 1);
+    color: rgba(160, 224, 88, 255);
     font-size:250%;
     font-family: Indie Flower;
     font-style: oblique;
@@ -53,19 +50,19 @@ html, body {
 }
 
 .tooltip > .tooltip-inner {
-    background-color: rgba(175, 229, 89, 1);
+    background-color: rgba(160, 224, 88, 255);
     color: black; 
 }
 
 .tooltip.bottom > .tooltip-arrow {
-    border-bottom: 5px solid rgba(175, 229, 89, 1);
+    border-bottom: 5px solid rgba(160, 224, 88, 255);
 }
 
 #gradient {
     margin-top: 250px;
     height: 70px;
     width: 100%;
-    background: linear-gradient(rgba(127, 173, 111, 255) 10%, rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(104, 160, 96, 255) 10%, rgba(0, 0, 0, 0));
     position:fixed;
 }
 
